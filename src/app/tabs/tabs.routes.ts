@@ -7,19 +7,19 @@ export const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
+        path: 'loggin',
         loadComponent: () =>
-          import('../tab1/tab1.page').then((m) => m.Tab1Page),
+          import('../loggin/loggin.page').then((m) => m.LogginPage),
       },
       {
-        path: 'tab2',
+        path: 'calendar',
         loadComponent: () =>
-          import('../tab2/tab2.page').then((m) => m.Tab2Page),
+          import('../calendar/calendar.page').then((m) => m.CalendarPage),
       },
       {
         path: 'tab3',
         loadComponent: () =>
-          import('../tab3/tab3.page').then((m) => m.Tab3Page),
+          import('../day-activities/day-activities.page').then((m) => m.DayActivitiesPage),
       },
       {
         path: '',
@@ -30,7 +30,7 @@ export const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/loggin',
     pathMatch: 'full',
   },
 ];
