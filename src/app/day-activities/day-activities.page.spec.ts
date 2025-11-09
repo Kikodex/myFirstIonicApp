@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DayActivitiesPage } from './day-activities.page';
 
-describe('Tab3Page', () => {
+describe('dayAvtivitiesPage', () => {
   let component: DayActivitiesPage;
   let fixture: ComponentFixture<DayActivitiesPage>;
 
