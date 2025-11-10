@@ -16,15 +16,23 @@ import { Route, Router } from '@angular/router';
 export class TabsPage {
   public environmentInjector = inject(EnvironmentInjector);
 
-  constructor(private router: Router) {
+  constructor(private routes: Router) {
     addIcons({ triangle, ellipse, square });
   }
   public openDayActivities(){
-    this.router.navigate(['menu/dayActivities']);
+    this.routes.navigate(['menu/dayActivities']);
   }
 
   public openCalendar(){
-    this.router.navigate(['menu/calendar']);
+    this.routes.navigate(['menu/calendar']);
+  }
+
+  public openWeekActivities(){
+    this.routes.navigate(['menu/weekActivities']);
+  }
+
+  public openMonthActivities(){
+    this.routes.navigate(['menu/monthActivities']);
   }
 
   
