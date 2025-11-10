@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { IonIcon, IonHeader, IonToolbar, IonTitle, IonContent, IonCard, IonCardContent, IonItem, IonLabel, IonInput, IonInputPasswordToggle, IonNote, IonButton } from '@ionic/angular/standalone';
-import { ExploreContainerComponent } from '../tabs/components/explore-container/explore-container.component';
+import { IonIcon, IonHeader, IonContent, IonCard, IonCardContent, IonItem, IonLabel, IonInput, IonNote, IonButton } from '@ionic/angular/standalone';
 import { CommonModule } from '@angular/common';
 import { FormBuilder, FormGroup, FormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -9,7 +8,7 @@ import { Router } from '@angular/router';
   selector: 'app-loggin',
   templateUrl: 'loggin.page.html',
   styleUrls: ['loggin.page.scss'],
-  imports: [FormsModule, CommonModule, IonIcon,IonHeader,IonContent,IonToolbar,IonTitle,ExploreContainerComponent, IonCard, IonCardContent, IonItem, IonLabel, IonInput, IonInputPasswordToggle, IonNote, IonButton],
+  imports: [FormsModule, CommonModule, IonIcon,IonHeader,IonContent, IonCard, IonCardContent, IonItem, IonLabel, IonInput, IonNote, IonButton],
 })
 export class LogginPage {
   title: string = 'Bienvenido';

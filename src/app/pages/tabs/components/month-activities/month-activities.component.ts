@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-month-activities',
+  standalone: true,
   templateUrl: './month-activities.component.html',
   styleUrls: ['./month-activities.component.scss'],
 })

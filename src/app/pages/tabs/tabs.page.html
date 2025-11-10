@@ -13,18 +13,16 @@
 </ion-menu>
 
 <div class="ion-page" id="main-content">
-  <ion-content [fullscreen]="true">
-    <ion-header>
-      <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-          </ion-buttons>
-        <ion-title>Menu</ion-title>
-      </ion-toolbar>
-    </ion-header>
-  <app-explore-container name="Oli"></app-explore-container>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Actividades</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
+  <ion-content>
+    <ion-router-outlet></ion-router-outlet>
   </ion-content>
-
-
 </div>
